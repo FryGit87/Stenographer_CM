@@ -1,31 +1,37 @@
-const express = require("express");
-const path = require("path");
 const fs = require("fs");
+const path = require("path");
 const { v4: uuidv4 } = require("uuid");
+const express = require("express");
+const {
+  readFromFile,
+  readAndAppend,
+  writeToFile,
+} = require("./helpers/fsUtils");
+const app = express();
 
 const PORT = process.env.PORT || 3001;
 
-const app = express();
+app.use(express.static(path.join(__dirname, "/public")));
 
-app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.use(express.static(path.join(__dirname, "public")));
+let notes = [];
 
-app.get("/", (req, res) =>
-  res.sendFile(path.join(__dirname, "/public/index.html"))
-);
+//Routes
 
 app.get("/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "notes.html"));
+  res.sendFile(path.join(__dirname, "/public/notes.html"));
 });
 
 app.get("/api/notes", (req, res) => {
-  let notes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
-  res.json(notes);
+  res.sendFile(path.join(__dirname, "/db/db.json"));
 });
 
-//Creates payload using uuid to generate an ID
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/index.html"));
+});
+
 app.post("/api/notes", (req, res) => {
   const newNote = {
     title: req.body.title,
@@ -39,10 +45,23 @@ app.post("/api/notes", (req, res) => {
   res.json(notes);
 });
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+app.delete("/api/notes/:id", (req, res) => {
+  const tipId = req.params.id;
+  readFromFile("./db/db.json")
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      // Make a new array of all tips except the one with the ID provided in the URL
+      const result = json.filter((tip) => tip.id !== tipId);
+
+      // Save that array to the filesystem
+      writeToFile("./db/db.json", result);
+
+      // Respond to the DELETE request
+      res.json(`Item ${tipId} has been deleted 🗑️`);
+    });
 });
 
-app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT}`)
-);
+//starts the server to start listening
+app.listen(PORT, () => {
+  console.log("App listening on PORT " + PORT);
+});
