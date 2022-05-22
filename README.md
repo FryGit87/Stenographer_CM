@@ -56,6 +56,18 @@ npm start
 
 Please see instructional video below:
 
+<details>
+<summary>Operational Images</summary>
+<br>
+[Landing Page](/assets/s1.png)
+<br>
+[Adding a Note](/assets/s2.png)
+<br>
+[List of Notes](/assets/s3.png)
+<br>
+[Notes Deleted](/assets/s4.png)
+</details>
+
 ---
 
 ## Contributors

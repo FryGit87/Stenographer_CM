@@ -1,1 +1,22 @@
-[]
+[
+    {
+        "title": "Title of a Note",
+        "text": "Web designers generally have nothing to do with creating content for their projects. Even so, the look of a site can be incomplete if no words are included. Web designers need to find ways to incorporate copyright-free content into their designs to provide clients with a look that is as finished as possible.\n\nDummy text refers to the bits of content that are used to fill a website mock-up. This text helps web designers better envision how the website will look as a finished product. It is important to understand that dummy text has no meaning whatsoever. Its sole purpose is to fill out blank spaces with “word-like” content, without making any copyright infringements.\n\nDummy text is also known as filler text or placeholder text, and it has been used for a long time in the various fields of online publishing.",
+        "id": "93b7112a-18c6-4e2f-9519-62ef380756fb"
+    },
+    {
+        "title": "Second note",
+        "text": "thank you",
+        "id": "94995bdb-1e5b-4225-bd93-788df60c65fb"
+    },
+    {
+        "title": "Sixth note",
+        "text": "ty",
+        "id": "93037515-6ea2-4eb4-808d-2f275ecd799c"
+    },
+    {
+        "title": "Seventh note",
+        "text": "ty",
+        "id": "3692f2c4-9415-4610-a97d-eb22723f7de2"
+    }
+]
