@@ -59,13 +59,13 @@ Please see instructional video below:
 <details>
 <summary>Operational Images</summary>
 <br>
-[Landing Page](/assets/s1.png)
+<img src="assets/s1.png" alt="Landing Page" width="400px"/>
 <br>
-[Adding a Note](/assets/s2.png)
+<img src="assets/s2.png" alt="Adding a Note" width="400px"/>
 <br>
-[List of Notes](/assets/s3.png)
+<img src="assets/s3.png" alt="List of Notes" width="400px"/>
 <br>
-[Notes Deleted](/assets/s4.png)
+<img src="assets/s4.png" alt="Notes Deleted" width="400px"/>
 </details>
 
 ---
