@@ -56,6 +56,8 @@ npm start
 
 Please see instructional video below:
 
+![App_Walkthrough](/assets/app.gif)
+
 <details>
 <summary>Operational Images</summary>
 <br>
