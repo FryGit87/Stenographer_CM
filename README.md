@@ -54,8 +54,10 @@ npm start
 
 ## Usage
 
-Please see instructional video below:
+Instructional Video format:
+[Click here!](https://drive.google.com/file/d/1B03GiX96jxnXwrxgAAgfiM-Fq2D0yyra/view?usp=sharing)
 
+Please see instructional video below:
 ![App_Walkthrough](/assets/app.gif)
 
 <details>
