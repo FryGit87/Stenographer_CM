@@ -4,6 +4,8 @@
 
 # Stenographer_CM
 
+Heroku Deployed Application: [Click Here!](https://pure-shelf-65014.herokuapp.com/)
+
 ## Description
 
 An application that takes user input 'Notes' and 'Title' and having the ability to save. Any user saved notes are added to the left hand side column with the option to recall when clicked for future view. Once the notes are no longer wanted, they can be removed by clicking the corresponding 'trash can' logo to delete the note. Currently no secondary "Are you sure?" check is implemented so the user will have to be certain when deleting. The application uses Express.js, Node.js and JavaScript and the live app has been deployed through Heroku.
