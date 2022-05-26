@@ -59,6 +59,10 @@ npm start
 Instructional Video format:
 [Click here!](https://drive.google.com/file/d/1B03GiX96jxnXwrxgAAgfiM-Fq2D0yyra/view?usp=sharing)
 
+
+https://user-images.githubusercontent.com/76273697/170458814-d8558986-4ee4-4e09-a35d-51ed9b0b5cae.mp4
+
+
 Please see instructional video below:
 ![App_Walkthrough](/assets/app.gif)
 
